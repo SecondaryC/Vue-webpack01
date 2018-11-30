@@ -1,14 +1,14 @@
-#vue+mintUI+webpack项目---移动端APP
+<h1>vue+mintUI+webpack项目---移动端APP</h1>
 
-##一,项目介绍
+<h2>一,项目介绍</h2>
 &nbsp;&nbsp;&nbsp;&nbsp;该项目包含home,member,shoppingCar,search四个主板面,通过底部的导航跳转,主要是通过component(组件)+router(路由)实现跳转,顶部是header头部信息,
 设有后退键,通过$route.go(-1),实现后退.home中的跳转也是通过路由来实现的.
 
 
-##二,搭建基本框架
-######&nbsp;&nbsp;&nbsp;本项目需要配置webpack环境,可参考我的csdn博客:[配置webpack](https://blog.csdn.net/qq_42039281/article/details/84349077)
+<h2>二,搭建基本框架</h2>
+<h6>&nbsp;&nbsp;&nbsp;本项目需要配置webpack环境,可参考我的csdn博客:[配置webpack](https://blog.csdn.net/qq_42039281/article/details/84349077)</h6>
 
-###1,vue的导入
+<h3>1,vue的导入</h3>
 安装vue
 1. 运行npm i vue -S将vue安装为运行依赖；
 2. 运行npm i vue-loader vue-template-compiler -D将解析转换vue的包安装为开发依赖；
@@ -51,7 +51,7 @@
 做完上面的这些,可以测试一下,vue和主模板是否导入成功,可以在App.vue主模板中的tempalte标签添加`<div>环境搭建</div>`
 测试.`$ cnpm run dev` 运行项目
 
-###2,header区域
+<h3>2,header区域</h3>
 header区域需要使用到mint-ui
 安装mint-ui
 `cnpm i mint-ui -S`
@@ -64,7 +64,7 @@ index.js中安装mint-ui
 下面我们就可以在主模板中引用mint-ui中的样式[header样式](http://mint-ui.github.io/docs/#/zh-cn2/header)
 
 
-###3,底部导航搭建
+<h3>3,底部导航搭建
 底部的bar需要用到mui中的样式需要导入mui
 在src文件夹下创建lib文件夹,导入mui的包
 在index中导入mui的css样式
@@ -74,7 +74,7 @@ index.js中安装mint-ui
 接下来更改样式,更改字体图标时,会用到扩展字体图标 需要下载icons-extra.css和mui-icons-extra.ttf,分别放到mui
 包下面的css,font文件夹中,然后在index.js中引入css样式 `import './lib/mui/css/icons-extra.css'`
 
-###3,安装路由
+<h3>3,安装路由</h3>
 
 1,安装路由
 `cnpm i vue-router -S`
